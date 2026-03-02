@@ -5,6 +5,7 @@
 #include <stack>
 #include <cstdlib>
 #include <ctime>
+#include <limits>
 
 // =========================================================
 // [OS 호환성 처리] Windows / Mac / Linux 구분
@@ -379,6 +380,7 @@ int main() {
                     cout << "⚠️ [경고] 자연재해 [" << disaster << "] 발생!! ⚠️\n";
                     for (auto e : farm) e->hitByDisaster();
                 }
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 pauseGame();
             }
             continue;
