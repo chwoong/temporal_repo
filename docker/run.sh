@@ -2,4 +2,4 @@ docker run -it --rm \
   --platform linux/amd64 \
   -v $(pwd):/workspace \
   --name cpp-dev-container \
-  cpp-dev:13
+  chwoong/cpp-dev:13
