@@ -14,5 +14,6 @@ RUN apt-get update && apt-get install -y \
     && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100 \
     && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 100 \
     && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y libsfml-dev
 
 CMD ["/bin/bash"]
